@@ -26,13 +26,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             identifier = "BlueCell"
         }
 
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) else {
-            fatalError("cellの作成に失敗")
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! TableViewCell
 
-        if let prefectureLabel = cell.viewWithTag(1) as? UILabel, let countLabel = cell.viewWithTag(2) as? UILabel {
-            prefectureLabel.text = prefectures[indexPath.row]
-            countLabel.text = "\(indexPath.row + 1)番目の都道府県です"
+        if indexPath.row % 3 == 0 {
+            cell.redPrefectureLabel?.text = prefectures[indexPath.row]
+            cell.redNumberLabel?.text = "\(indexPath.row + 1)番目の都道府県です"
+        } else if indexPath.row % 3 == 1 {
+            cell.greenPrefectureLabel?.text = prefectures[indexPath.row]
+            cell.greenNumberLabel?.text = "\(indexPath.row + 1)番目の都道府県です"
+        } else {
+            cell.bluePrefectureLabel?.text = prefectures[indexPath.row]
+            cell.blueNumberLabel?.text = "\(indexPath.row + 1)番目の都道府県です"
         }
 
         return cell

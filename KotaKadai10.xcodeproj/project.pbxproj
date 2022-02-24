@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B98ACB5B27C71D1600622179 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98ACB5A27C71D1600622179 /* TableViewCell.swift */; };
 		B9A272CF27C4655E000ABD84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A272CE27C4655E000ABD84 /* AppDelegate.swift */; };
 		B9A272D127C4655E000ABD84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A272D027C4655E000ABD84 /* SceneDelegate.swift */; };
 		B9A272D327C4655E000ABD84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A272D227C4655E000ABD84 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B98ACB5A27C71D1600622179 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B9A272CB27C4655E000ABD84 /* KotaKadai10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotaKadai10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A272CE27C4655E000ABD84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9A272D027C4655E000ABD84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				B9A272D027C4655E000ABD84 /* SceneDelegate.swift */,
 				B9A272D227C4655E000ABD84 /* ViewController.swift */,
 				B9A272D427C4655E000ABD84 /* Main.storyboard */,
+				B98ACB5A27C71D1600622179 /* TableViewCell.swift */,
 				B9A272D727C4655F000ABD84 /* Assets.xcassets */,
 				B9A272D927C4655F000ABD84 /* LaunchScreen.storyboard */,
 				B9A272DC27C4655F000ABD84 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9A272D327C4655E000ABD84 /* ViewController.swift in Sources */,
+				B98ACB5B27C71D1600622179 /* TableViewCell.swift in Sources */,
 				B9A272CF27C4655E000ABD84 /* AppDelegate.swift in Sources */,
 				B9A272D127C4655E000ABD84 /* SceneDelegate.swift in Sources */,
 			);
