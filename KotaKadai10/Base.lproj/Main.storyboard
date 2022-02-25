@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RedCell" id="ghP-OZ-nMo" customClass="TableViewCell" customModule="KotaKadai10" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrefectureCell" id="ghP-OZ-nMo" customClass="TableViewCell" customModule="KotaKadai10" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ghP-OZ-nMo" id="8Fz-MW-DBm">
@@ -51,78 +51,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.97254908080000002" green="0.82745099070000006" blue="0.81960785390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
-                                            <outlet property="redNumberLabel" destination="tvR-PY-Tcg" id="iHD-0u-cQQ"/>
-                                            <outlet property="redPrefectureLabel" destination="Mpa-un-mTF" id="xtI-Fx-8JP"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GreenCell" id="xgc-CY-PtZ" customClass="TableViewCell" customModule="KotaKadai10" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="87.5" width="414" height="43"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xgc-CY-PtZ" id="bT3-dH-53b">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPA-ta-ayb">
-                                                    <rect key="frame" x="20" y="11" width="41.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWs-gg-xj8">
-                                                    <rect key="frame" x="352.5" y="11" width="41.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemGrayColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="TPA-ta-ayb" firstAttribute="leading" secondItem="bT3-dH-53b" secondAttribute="leadingMargin" id="Anf-cn-uzl"/>
-                                                <constraint firstItem="vWs-gg-xj8" firstAttribute="top" secondItem="bT3-dH-53b" secondAttribute="topMargin" id="Rop-Uo-7DS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="TPA-ta-ayb" secondAttribute="bottom" id="SLi-7V-ew9"/>
-                                                <constraint firstItem="vWs-gg-xj8" firstAttribute="trailing" secondItem="bT3-dH-53b" secondAttribute="trailingMargin" id="ZWu-cq-yf2"/>
-                                                <constraint firstItem="vWs-gg-xj8" firstAttribute="bottom" secondItem="bT3-dH-53b" secondAttribute="bottomMargin" id="hOK-ce-JEU"/>
-                                                <constraint firstItem="TPA-ta-ayb" firstAttribute="top" secondItem="bT3-dH-53b" secondAttribute="topMargin" id="kmE-xy-gb6"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.89019608500000003" green="0.96470588450000005" blue="0.64313727620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <outlet property="greenNumberLabel" destination="vWs-gg-xj8" id="Nh2-72-kcD"/>
-                                            <outlet property="greenPrefectureLabel" destination="TPA-ta-ayb" id="dFW-0Q-9Ab"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlueCell" id="hRY-sg-32y" customClass="TableViewCell" customModule="KotaKadai10" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="130.5" width="414" height="43"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRY-sg-32y" id="4qh-t0-iNM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suc-2c-23C">
-                                                    <rect key="frame" x="20" y="11" width="41.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfG-2d-6LG">
-                                                    <rect key="frame" x="352.5" y="11" width="41.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemGrayColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Suc-2c-23C" firstAttribute="top" secondItem="4qh-t0-iNM" secondAttribute="topMargin" id="Fy8-yu-yL9"/>
-                                                <constraint firstItem="nfG-2d-6LG" firstAttribute="top" secondItem="4qh-t0-iNM" secondAttribute="topMargin" id="Lpg-jt-eaQ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Suc-2c-23C" secondAttribute="bottom" id="Ma4-o0-HqR"/>
-                                                <constraint firstItem="nfG-2d-6LG" firstAttribute="trailing" secondItem="4qh-t0-iNM" secondAttribute="trailingMargin" id="OKy-pu-03B"/>
-                                                <constraint firstItem="nfG-2d-6LG" firstAttribute="bottom" secondItem="4qh-t0-iNM" secondAttribute="bottomMargin" id="fog-so-ZWd"/>
-                                                <constraint firstItem="Suc-2c-23C" firstAttribute="leading" secondItem="4qh-t0-iNM" secondAttribute="leadingMargin" id="p6T-cY-I7n"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.8078432083" green="0.84313726430000002" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <outlet property="blueNumberLabel" destination="nfG-2d-6LG" id="avJ-WR-6va"/>
-                                            <outlet property="bluePrefectureLabel" destination="Suc-2c-23C" id="j5P-5S-yga"/>
+                                            <outlet property="numberLabel" destination="tvR-PY-Tcg" id="GLA-DP-Gb0"/>
+                                            <outlet property="prefectureLabel" destination="Mpa-un-mTF" id="PxU-Ld-BoW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
