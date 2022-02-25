@@ -8,23 +8,8 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var redPrefectureLabel: UILabel!
-    @IBOutlet weak var greenPrefectureLabel: UILabel!
-    @IBOutlet weak var bluePrefectureLabel: UILabel!
-    @IBOutlet weak var redNumberLabel: UILabel!
-    @IBOutlet weak var greenNumberLabel: UILabel!
-    @IBOutlet weak var blueNumberLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var prefectureLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
 
 }
